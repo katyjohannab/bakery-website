@@ -1,0 +1,175 @@
+/* CSS HEX
+--red-pantone: #e63946ff;
+--honeydew: #f1faeeff;
+--non-photo-blue: #a8dadcff;
+--cerulean: #457b9dff;
+--berkeley-blue: #1d3557ff;
+
+
+#cdb4db, #ffc8dd, #ffafcc, #bde0fe, #a2d2ff
+
+#edafb8, #f7e1d7, #dedbd2, #b0c4b1, #4a5759
+
+CSS HEX
+--davys-gray: #595758ff;
+--lavender-blush: #ffeef2ff;
+--pale-purple: #ffe4f3ff;
+--pink-lavender: #ffc8fbff;
+--amaranth-pink: #ff92c2ff;
+
+FONTS
+
+font-family: 'Yeseva One', cursive;
+font-family: 'Josefin Sans', sans-serif;
+
+font-family: 'Abril fatface', cursive;
+font-family: 'Poppins', sans-serif;
+
+
+*/
+
+body {
+  border-top: 10px solid #ff92c2ff;
+  background-color: #ffeef2ff;
+}
+
+/*HEADINGS & TEXT*/
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+/*MAIN HEADER NAVBAR*/
+.main-header {
+  background-color: #ffc8fbff;
+  padding: 5px 40px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  color: #595758ff;
+  text-decoration: none;
+  font-size: 24px;
+  color: #595758ff;
+}
+
+.el--1 {
+  font-family: "Abril fatface", cursive;
+  letter-spacing: 0.5em;
+  order: 1;
+  background-color: none;
+  margin: none;
+  padding: 1em;
+  flex-grow: 1;
+}
+
+.navbar a:link {
+  color: #595758ff;
+  text-decoration: none;
+  font-family: "Abril fatface", cursive;
+  font-size: 24px;
+}
+
+.navbar a:link:hover {
+  color: #ffeef2ff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/*MAIN IMAGE SECTION*/
+.cake-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  margin: 0;
+  padding-left: 0;
+  background-color: #ffeef2ff;
+}
+
+.hero-text-container {
+  background-color: none;
+  width: 40%;
+}
+.hero-text {
+  width: 30%;
+  font-family: "Abril fatface", cursive;
+  font-size: 130px;
+  letter-spacing: 0.02em;
+  color: #595758ff;
+  position: absolute;
+  margin-bottom: 60px;
+  margin-left: 200px;
+  background-color: none;
+}
+.hero-subtext {
+  position: absolute;
+  margin-top: 180px;
+  font-family: "Poppins", sans-serif;
+  color: #595758ff;
+}
+
+.cake-image {
+  flex-basis: 1050px;
+  max-width: 1050px;
+  padding: 3em;
+  height: auto;
+}
+
+.menu-button {
+  width: 150px;
+  height: 75px;
+  background-color: none;
+  background: none;
+  position: relative;
+  box-shadow: 15px 15px 0px 0px #ff92c2ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #595758ff;
+  border: 2px solid #595758ff;
+}
+
+.cake-subtext-container {
+  display: flex;
+  background-color: white;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.cake-subtext {
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  font-size: 1.8em;
+  letter-spacing: 0.25em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+/*SECTION TWO*/
+
+.sec2container {
+  display: flex;
+  background-color: #ffe4f3ff;
+  padding: 2em;
+  justify-content: center;
+  gap: 2em;
+}
+
+.sec2child1 {
+}
+
+.donuts {
+  width: 30em;
+}
+.sec2child2 {
+}
+.mini-cakes {
+  width: 30em;
+}
