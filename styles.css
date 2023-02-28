@@ -155,6 +155,7 @@ p {
 
 .cake-subtext {
   font-family: "Poppins", sans-serif;
+  color: #595758ff;
   font-weight: lighter;
   font-size: 1.8em;
   letter-spacing: 0.25em;
@@ -170,7 +171,7 @@ p {
   background-color: #ffe4f3ff;
   padding-left: 2em;
   padding-right: 2em;
-  padding-top: 2em;
+  padding-top: 10em;
   padding-bottom: 0em;
   justify-content: space-evenly;
   margin-left: auto;
@@ -209,6 +210,7 @@ p {
   margin-bottom: auto;
   position: relative;
   order: -1;
+  padding-bottom: 8em;
 }
 
 .sec2buttons button {
@@ -248,7 +250,7 @@ button.view-cakes-1::before {
   bottom: 0;
   background: #ff92c2ff;
   border-radius: inherit;
-  box-shadow: 0 0 0 2px #595758ff, 0 0.625em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #595758ff, 0 0.625em 0 0 #ffc8fbff;
   transform: translate3d(0, 0.75em, -1em);
   transition: transform 0.15s, box-shadow 0.15s;
 }
@@ -258,7 +260,7 @@ button.view-cakes-1:hover {
   transform: translate(0, 0.25em);
 }
 button.view-cakes-1:hover::before {
-  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #595758ff, 0 0.5em 0 0 #ffc8fbff;
   transform: translate3d(0, 0.5em, -1em);
 }
 button.view-cakes-1.btn:active {
@@ -267,7 +269,7 @@ button.view-cakes-1.btn:active {
 }
 
 button.view-cakes-1.btn:active::before {
-  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  box-shadow: 0 0 0 2px #595758ff, 0 0 #ffc8fbff;
   transform: translate3d(0, 0, -1em);
 }
 
@@ -306,4 +308,47 @@ button.view-cakes-1.btn:active::before {
   color: #595758ff;
   border: 2px solid #595758ff;
   text-transform: uppercase;
+}
+
+/*SECTION 3*/
+
+.sec3 {
+  display: flex;
+  direction: row;
+  background-color: white;
+  width: 100%;
+  height: 40em;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+  color: #595758ff;
+  font-size: 20px;
+}
+
+.sec3-text {
+  display: flex;
+  background-color: white;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec3-image {
+  align-self: flex-end;
+}
+
+/*CAROUSEL*/
+
+.carousel-1 {
+  margin: 5em;
+  background-color: #ffe9e9;
+  width: 100%;
+}
+
+.carousel {
+  width: 640px;
+  height: 360px;
 }
