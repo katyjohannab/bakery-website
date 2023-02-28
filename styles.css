@@ -64,22 +64,40 @@ p {
   order: 1;
   background-color: none;
   margin: none;
-  padding: 1em;
+  padding: 0;
   flex-grow: 1;
 }
 
-.navbar a:link {
+.navbar /*a:link {
   color: #595758ff;
   text-decoration: none;
   font-family: "Abril fatface", cursive;
   font-size: 24px;
 }
+*/
 
-.navbar a:link:hover {
-  color: #ffeef2ff;
+
+a:link {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
   text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-family: "Abril fatface", cursive;
   font-size: 24px;
 }
+.navbar a:link:hover {
+  background-color: #ffeef2ff;
+  color: #595758ff;
+  padding: 24px 10px;
+}
+
+/*.navbar a:link:hover {
+  color: #595758ff;
+  text-decoration: none;
+  font-size: 24px;
+}*/
 
 /*MAIN IMAGE SECTION*/
 .cake-container {
@@ -172,4 +190,49 @@ p {
 }
 .mini-cakes {
   width: 30em;
+}
+
+.sec2buttons {
+  display: flex;
+  background-color: #ffe4f3ff;
+}
+
+.buttons-container-1 {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.view-cakes-1 {
+  width: 150px;
+  height: 75px;
+  background-color: none;
+  background: none;
+  position: relative;
+  box-shadow: 15px 15px 0px 0px #ff92c2ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #595758ff;
+  border: 2px solid #595758ff;
+}
+
+.buttons-container-2 {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.view-cakes-2 {
+  width: 150px;
+  height: 75px;
+  background-color: none;
+  background: none;
+  position: relative;
+  box-shadow: 15px 15px 0px 0px #ff92c2ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #595758ff;
+  border: 2px solid #595758ff;
 }
