@@ -68,17 +68,8 @@ p {
   flex-grow: 1;
 }
 
-.navbar /*a:link {
-  color: #595758ff;
-  text-decoration: none;
-  font-family: "Abril fatface", cursive;
-  font-size: 24px;
-}
-*/
-
-
-a:link {
-  transition: 0.4s;
+.navbar a:link {
+  transition: 0.7s;
   color: #ffffff;
   font-size: 20px;
   text-decoration: none;
@@ -92,12 +83,6 @@ a:link {
   color: #595758ff;
   padding: 24px 10px;
 }
-
-/*.navbar a:link:hover {
-  color: #595758ff;
-  text-decoration: none;
-  font-size: 24px;
-}*/
 
 /*MAIN IMAGE SECTION*/
 .cake-container {
@@ -141,9 +126,10 @@ a:link {
 }
 
 .menu-button {
+  transition: all 0.5s ease;
   width: 150px;
   height: 75px;
-  background-color: none;
+  background-color: transparent;
   background: none;
   position: relative;
   box-shadow: 15px 15px 0px 0px #ff92c2ff;
@@ -151,6 +137,11 @@ a:link {
   font-size: 30px;
   color: #595758ff;
   border: 2px solid #595758ff;
+  text-transform: uppercase;
+}
+
+.menu-button:hover {
+  background-color: white;
 }
 
 .cake-subtext-container {
