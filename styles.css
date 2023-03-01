@@ -1,15 +1,4 @@
-/* CSS HEX
---red-pantone: #e63946ff;
---honeydew: #f1faeeff;
---non-photo-blue: #a8dadcff;
---cerulean: #457b9dff;
---berkeley-blue: #1d3557ff;
-
-
-#cdb4db, #ffc8dd, #ffafcc, #bde0fe, #a2d2ff
-
-#edafb8, #f7e1d7, #dedbd2, #b0c4b1, #4a5759
-
+/*
 CSS HEX
 --davys-gray: #595758ff;
 --lavender-blush: #ffeef2ff;
@@ -25,116 +14,127 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Abril fatface', cursive;
 font-family: 'Poppins', sans-serif;
 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Slabo 13px', serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'Ultra', serif;
+font-family: 'Yeseva One', cursive;
 
 */
 
+/*PAGE SECTIONS*/
+
 body {
+  color: #595758ff;
   border-top: 10px solid #ff92c2ff;
-  background-color: #ffeef2ff;
+  position: relative;
 }
 
-/*HEADINGS & TEXT*/
+/*TEXT ELEMENTS*/
 
-p {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+.heading-2 {
+  font-family: "Inconsolata", mono-space;
+  font-size: 50px;
+  color: #595758ff;
+  text-transform: uppercase;
 }
 
-/*MAIN HEADER NAVBAR*/
-.main-header {
-  background-color: #ffc8fbff;
-  padding: 5px 40px;
+.paragraph {
+  font-family: "Inconsolata", mono-space;
+  font-size: 25px;
+  color: #595758ff;
 }
 
+.sub-text {
+  font-family: "Inconsolata", mono-space;
+  color: #595758ff;
+  font-weight: lighter;
+  font-size: 1.8em;
+  letter-spacing: 0.25em;
+}
+
+/*NAVBAR*/
 .navbar {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  color: #595758ff;
-  text-decoration: none;
-  font-size: 24px;
-  color: #595758ff;
+  background-color: #ffc8fbff;
+  margin-bottom: 5em;
+  margin-top: 1em;
 }
 
-.el--1 {
-  font-family: "Abril fatface", cursive;
+.px-3 {
+  padding-left: ($spacer * 0.5) !important;
+  padding-right: ($spacer * 4) !important;
+}
+
+.heading-logo {
   letter-spacing: 0.5em;
-  order: 1;
-  background-color: none;
-  margin: none;
-  padding: 0;
-  flex-grow: 1;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  color: #595758ff;
+}
+.nav-links {
+  color: grey;
 }
 
 .navbar a:link {
   transition: 0.7s;
-  color: #ffffff;
+  color: grey;
   font-size: 20px;
   text-decoration: none;
   padding: 0 10px;
   margin: 0 10px;
-  font-family: "Abril fatface", cursive;
+  font-family: "Inconsolata", monospace;
+  text-transform: none;
   font-size: 24px;
 }
 .navbar a:link:hover {
-  background-color: #ffeef2ff;
+  background-color: white;
   color: #595758ff;
   padding: 24px 10px;
 }
 
-/*MAIN IMAGE SECTION*/
-.cake-container {
-  display: flex;
-  width: 100%;
-  height: auto;
-  position: relative;
+/*ENGAGING TEXT AND IMAGE HEADER*/
 
-  margin: 0;
-  padding-left: 0;
-  background-color: #ffeef2ff;
+#header-cake {
+  border: 1px solid transparent;
+  width: auto;
+  height: 42em;
+
+  background-image: url("../project-one/bakery-website/main-cake.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: cover;
 }
 
-.hero-text-container {
-  background-color: none;
-  width: 40%;
+.white-bg {
+  background-color: white;
 }
-.hero-text {
-  width: 30%;
-  font-family: "Abril fatface", cursive;
-  font-size: 130px;
-  letter-spacing: 0.02em;
+
+.engaging-header {
+  background-color: #ffe4f3ff;
+}
+
+.engaging-text {
   color: #595758ff;
-  position: absolute;
-  margin-bottom: 60px;
-  margin-left: 260px;
-  background-color: none;
-}
-.hero-subtext {
-  position: absolute;
-  margin-top: 180px;
-  font-family: "Poppins", sans-serif;
-  color: #595758ff;
-}
-
-.cake-image {
-  flex-basis: 1050px;
-  max-width: 1050px;
-  padding: 3em;
-  height: auto;
+  font-size: 80px;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 0.25em;
+  opacity: 0.8;
+  column-gap: 0;
 }
 
 .menu-button {
   transition: all 0.5s ease;
-  width: 150px;
-  height: 75px;
-  background-color: transparent;
-  background: none;
+  padding: 0.5em;
+  background-color: white;
   position: relative;
-  box-shadow: 15px 15px 0px 0px #ff92c2ff;
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-family: "inconsolata", mono-space;
+  letter-spacing: 0.5em;
+  font-size: 20px;
   color: #595758ff;
   border: 2px solid #595758ff;
   text-transform: uppercase;
@@ -142,213 +142,148 @@ p {
 
 .menu-button:hover {
   background-color: white;
-  box-shadow: 0px 0px 0px 0px #ff92c2ff;
+  color: #ff92c2ff;
+  font-weight: bold;
 }
 
-.cake-subtext-container {
-  display: flex;
-  background-color: white;
-  padding: 2em;
-  justify-content: center;
-  align-items: center;
-}
-
-.cake-subtext {
-  font-family: "Poppins", sans-serif;
-  color: #595758ff;
-  font-weight: lighter;
-  font-size: 1.8em;
-  letter-spacing: 0.25em;
-  margin-left: 10em;
-  margin-right: 10em;
-}
-
-/*SECTION TWO*/
-
-.sec2container {
-  display: flex;
-  direction: row;
-  background-color: #ffe4f3ff;
-  padding-left: 2em;
-  padding-right: 2em;
+/*SUBHEADING*/
+.sub-heading {
   padding-top: 10em;
-  padding-bottom: 0em;
-  justify-content: space-evenly;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 10em;
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
-.sec2child1 {
-  align-self: center;
-}
-
-.donuts {
-  width: 30em;
-  margin-left: 10em;
-}
-.sec2child2 {
-  align-self: center;
-}
-.mini-cakes {
-  width: 30em;
-  margin-right: 10em;
-}
-
-.sec2buttons {
-  display: flex;
-  background-color: #ffe4f3ff;
-  position: relative;
-}
-
-.buttons-container-1 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  position: relative;
-  order: -1;
-  padding-bottom: 8em;
-}
-
-.sec2buttons button {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  font-size: inherit;
-  font-family: "Poppins", sans-serif;
-  padding-top: 0;
-}
-
-button.view-cakes-1 {
-  font-weight: 400;
-  color: #595758ff;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  padding: 1.25em 2em;
-  background: #fff0f0;
-  border: 2px solid #595758ff;
-  border-radius: 0.75em;
-  transition: transform 0.15s;
-  transform-style: preserve-3d;
-}
-
-button.view-cakes-1::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ff92c2ff;
-  border-radius: inherit;
-  box-shadow: 0 0 0 2px #595758ff, 0 0.625em 0 0 #ffc8fbff;
-  transform: translate3d(0, 0.75em, -1em);
-  transition: transform 0.15s, box-shadow 0.15s;
-}
-
-button.view-cakes-1:hover {
-  background: #ffe9e9;
-  transform: translate(0, 0.25em);
-}
-button.view-cakes-1:hover::before {
-  box-shadow: 0 0 0 2px #595758ff, 0 0.5em 0 0 #ffc8fbff;
-  transform: translate3d(0, 0.5em, -1em);
-}
-button.view-cakes-1.btn:active {
-  background: #ffe9e9;
-  transform: translate(0em, 0.75em);
-}
-
-button.view-cakes-1.btn:active::before {
-  box-shadow: 0 0 0 2px #595758ff, 0 0 #ffc8fbff;
-  transform: translate3d(0, 0, -1em);
-}
-
-/*.view-cakes-1 {
-  width: 150px;
-  height: 75px;
-  background-color: none;
-  background: none;
-  position: relative;
-  box-shadow: 15px 15px 0px 0px #ff92c2ff;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: #595758ff;
-  border: 2px solid #595758ff;
-  text-transform: uppercase;
-  margin-left: 10em;*/
-
-.buttons-container-2 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  position: relative;
-}
-
-.view-cakes-2 {
-  width: 150px;
-  height: 75px;
-  background-color: #ffe3e;
-  box-shadow: 15px 15px 0px 0px #ff92c2ff;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: #595758ff;
-  border: 2px solid #595758ff;
-  text-transform: uppercase;
-}
-
-/*SECTION 3*/
-
-.sec3 {
-  display: flex;
-  direction: row;
-  background-color: white;
-  width: 100%;
-  height: 40em;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Poppins", sans-serif;
-  color: #595758ff;
-  font-size: 20px;
-}
-
-.sec3-text {
-  display: flex;
-  background-color: white;
+/*TWO IMAGES SEC*/
+.two-images {
+  background-color: #ffc8fbff;
   padding: 2em;
-  justify-content: center;
-  align-items: center;
+}
+.cake-spacing {
+  padding-bottom: 2em;
 }
 
-.sec3-image {
-  align-self: flex-end;
+/*CAKE QUOTE*/
+.cake-quote {
+  background-color: #ffe4f3ff;
+  width: 100%;
+  margin-top: 4em;
+  width: 100%;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 20px;
+  padding: 0;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bakery-image {
+  width: 800px;
+}
+/*HEADINGS*/
+
+.cake-images {
+  width: 50%;
 }
 
 /*CAROUSEL*/
+.carousel-padding {
+  background-color: #ffe4f3ff;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
 
-.carousel-1 {
-  margin: 5em;
-  background-color: #ffe9e9;
+.carousel-width {
+  width: 50%;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+/*.carousel-control-prev
+  .carousel-control-next
+  .carousel-indicators
+  .sr-only
+  .li {
+  margin: auto;
+  text-align: center;
+} */
+
+/*IMAGE LAYOUT AT BOTTOM*/
+
+.container-layout {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-rows: repeat(1, minmax(200px, 1fr));
+  background-color: white;
+  margin-bottom: 5em;
+  margin-top: 5em;
+}
+
+.container-layout > div {
+  font-size: large;
+  text-align: center;
+  font-family: "inconsolata", mono-space;
+  font-size: 3vw;
+  color: #595758ff;
+}
+.container-layout > div > img {
+  object-fit: cover;
   width: 100%;
+  #ff92c2ff;
+  height: 100%;
+  background-color: #ffc8fbff;
 }
 
-.carousel {
-  width: 640px;
-  height: 360px;
+.opacity {
+  opacity: 0.5;
 }
+
+.greyscale {
+  opacity: 0.7;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.pink-background {
+  background-color: #ffc8fbff;
+}
+
+.pink-text {
+  background-color: #ffeef2ff;
+  background-size: cover;
+  color: #595758ff;
+  font-family: "inconsolata", mono-space;
+  font-size: 20px;
+  font-weight: lighter;
+  justify-content: center;
+  padding-top: 0.5em;
+}
+
+.pink-text:hover {
+  color: #49393b;
+}
+
+.greyscale:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  opacity: 1;
+}
+
+.background-opacity {
+  background-color: rgb(178, 190, 181, 0.5);
+}
+
+.footer-pink {
+  border-bottom: solid 5px #ff92c2ff;
+  background-color: #ffeef2ff;
+  width: 100%;
+  height: 3em;
+}
+/*LINKS*/
